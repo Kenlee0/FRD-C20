@@ -3,7 +3,7 @@ import './LoginPage.css'
 
 export default function LoginPage() {
     const [textInput, setTextInput] = useState("")
-
+    
     useEffect(() => {
         if (textInput.length < 6) {
             console.log('password length should > 6 characters')

@@ -11,6 +11,7 @@ function App() {
   let day = date.getDate()
 
   const [showLogin, setShowLogin] = useState(false)
+  
 
   return (
     <div className="App">
@@ -19,7 +20,7 @@ function App() {
       {!showLogin && <button onClick={() => {setShowLogin(true)}}>Login</button>}
       {showLogin &&<button onClick={() => {setShowLogin(false)}}>Logout</button>}
       </header>
-      <LoginPage/>
+      {!showLogin && <LoginPage/>}
       <MemoWallList/>
       <footer>
           Copyright &copy; Ken Lee {year + "/" + month + "/" + day}

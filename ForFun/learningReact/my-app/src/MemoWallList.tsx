@@ -14,6 +14,7 @@ export default function MemoWallList() {
     setBtnMemo('No Empty btn')
     console.log("change text.content")
   }
+
   return (
     <div>
       <h1>MemoWallList</h1>
@@ -21,7 +22,7 @@ export default function MemoWallList() {
 
       {!showMemo && <button onClick={() => { setShowMemo(true) }}>Show Memos</button>}
       {showMemo && <button onClick={() => { setShowMemo(false) }}>Hide Memoes</button>}
-      {memoList.map((memo)=> {
+      {showMemo && memoList.map((memo)=> {
         return(
           <div key={memo.id}>
             {memo.name}
