@@ -5,6 +5,10 @@ import { useState} from 'react'
 import LoginPage from './LoginPage';
 
 function App() {
+  const date = new Date()
+  let year = date.getFullYear()
+  let month = date.getMonth() + 1
+  let day = date.getDate()
 
   const [showLogin, setShowLogin] = useState(false)
 
@@ -17,6 +21,9 @@ function App() {
       </header>
       <LoginPage/>
       <MemoWallList/>
+      <footer>
+          Copyright &copy; Ken Lee {year + "/" + month + "/" + day}
+      </footer>
     </div>
   );
 }
