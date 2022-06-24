@@ -3,6 +3,7 @@ import './App.css';
 import MemoWallList from './MemoWallList';
 import { useState} from 'react'
 import LoginPage from './LoginPage';
+import RegisterPage from './RegisterPage';
 
 function App() {
   const date = new Date()
@@ -22,6 +23,7 @@ function App() {
       </header>
       {!showLogin && <LoginPage/>}
       <MemoWallList/>
+      <RegisterPage/>
       <footer>
           Copyright &copy; Ken Lee {year + "/" + month + "/" + day}
       </footer>
