@@ -1,0 +1,12 @@
+nav {
+    max-width: 300rem;
+    padding: 10px 15px;
+    background-color: aqua;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul > li {
+    list-style-type: none;
+}

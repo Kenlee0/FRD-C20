@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import './LoginPage.css'
+import '../css/LoginPage.css'
 
 export default function LoginPage() {
     const [textInput, setTextInput] = useState("")

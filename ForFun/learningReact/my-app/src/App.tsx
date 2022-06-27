@@ -2,8 +2,10 @@ import React from 'react';
 import './App.css';
 import MemoWallList from './MemoWallList';
 import { useState} from 'react'
-import LoginPage from './LoginPage';
-import RegisterPage from './RegisterPage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import Navbar from './components/Navbar'
+
 
 function App() {
   const date = new Date()
@@ -23,6 +25,7 @@ function App() {
       </header>
       {!showLogin && <LoginPage/>}
       <MemoWallList/>
+      <Navbar/>
       <RegisterPage/>
       <footer>
           Copyright &copy; Ken Lee {year + "/" + month + "/" + day}
